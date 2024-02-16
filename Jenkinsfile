@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('init') {
             steps {
+                sh 'ls'
                 sh 'docker stop nodejs-project || true'
                 sh 'docker rm nodejs-project || true'
             }
